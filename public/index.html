@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Todo App</title>
+  <style>
+    *{box-sizing:border-box}body{margin:0;background:#f4f6fb;color:#182033;font:16px system-ui,-apple-system,Segoe UI,sans-serif}.wrap{max-width:680px;margin:70px auto;padding:0 20px}.card{background:#fff;border:1px solid #e5e9f2;border-radius:16px;padding:28px;box-shadow:0 12px 35px #1820330c}h1{margin:0 0 6px;font-size:30px}.sub{margin:0 0 24px;color:#697386}.form{display:flex;gap:10px}input{min-width:0;flex:1;padding:12px 14px;border:1px solid #d6dce8;border-radius:9px;font:inherit}button{border:0;border-radius:9px;padding:11px 16px;background:#3659d9;color:#fff;font:600 15px system-ui;cursor:pointer}button:hover{background:#2948bd}.list{list-style:none;margin:20px 0 0;padding:0}.item{display:flex;align-items:center;gap:12px;padding:14px 2px;border-bottom:1px solid #eef0f5}.item:last-child{border:0}.item input{flex:0 0 auto;width:18px;height:18px;accent-color:#3659d9}.title{flex:1;overflow-wrap:anywhere}.done .title{text-decoration:line-through;color:#9299a8}.delete{padding:7px 10px;background:#f0f2f8;color:#555f73}.delete:hover{background:#ffe8e8;color:#b42318}.message{padding:22px 0;color:#7b8495;text-align:center}.error{color:#b42318;margin:12px 0 0;font-size:14px}@media(max-width:520px){.wrap{margin:28px auto}.card{padding:22px}.form{flex-direction:column}}
+  </style>
+</head>
+<body><main class="wrap"><section class="card">
+  <h1>My todos</h1><p class="sub">A simple list for the things you want to get done.</p>
+  <form class="form" id="form"><input id="title" maxlength="200" placeholder="Add a todo..." aria-label="Todo title" required><button>Add todo</button></form>
+  <p class="error" id="error" role="alert"></p><ul class="list" id="list"></ul>
+</section></main><script src="/app.js"></script></body></html>
